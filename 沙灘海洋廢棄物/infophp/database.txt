@@ -1,0 +1,36 @@
+127.0.0.1/hi/uploads/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=hi&table=uploads
+SQL 查詢已順利執行。
+
+show CREATE table `uploads`;
+
+
+
+uploads	CREATE TABLE `uploads` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `file_name` varchar(255) NOT NULL,
+  `file_path` varchar(255) NOT NULL,
+  `prefile_path` varchar(255) DEFAULT NULL,
+  `uploaded_at` date NOT NULL,
+  `竹子` int(10) NOT NULL DEFAULT 0,
+  `桶子` int(10) NOT NULL DEFAULT 0,
+  `浮標與浮球` int(10) NOT NULL DEFAULT 0,
+  `玻璃瓶` int(10) NOT NULL DEFAULT 0,
+  `安全帽` int(10) NOT NULL DEFAULT 0,
+  `鐵桶` int(10) NOT NULL DEFAULT 0,
+  `鐵罐` int(10) NOT NULL DEFAULT 0,
+  `救生圈` int(10) NOT NULL DEFAULT 0,
+  `燈管` int(10) NOT NULL DEFAULT 0,
+  `漁網` int(10) NOT NULL DEFAULT 0,
+  `其他塑膠` int(10) NOT NULL DEFAULT 0,
+  `塑膠籃` int(10) NOT NULL DEFAULT 0,
+  `塑膠瓶` int(10) NOT NULL DEFAULT 0,
+  `繩子` int(10) NOT NULL DEFAULT 0,
+  `拖鞋` int(10) NOT NULL DEFAULT 0,
+  `保麗龍` int(10) NOT NULL DEFAULT 0,
+  `輪胎` int(10) NOT NULL DEFAULT 0,
+  `其他垃圾` int(10) NOT NULL DEFAULT 0,
+  `管子` int(10) NOT NULL DEFAULT 0,
+  `鋁箔包` int(10) NOT NULL DEFAULT 0,
+  `beach` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci	
