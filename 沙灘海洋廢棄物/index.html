@@ -78,6 +78,50 @@ transform: scale(0.9);
 animation: scaleUp 0.5s forwards;
 }
 
+.beach-card {
+width: 100%;
+aspect-ratio: 617 / 287;
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+overflow: hidden;
+border: 4px solid rgba(255, 255, 255, 0.85);
+border-radius: 2rem;
+background: linear-gradient(145deg, #ffffff 0%, #dff3ff 45%, #8ec8fa 100%);
+box-shadow: 0 12px 24px rgba(33, 83, 135, 0.22);
+color: #215387;
+font-size: clamp(2rem, 4vw, 3.5rem);
+font-weight: 700;
+text-shadow: 0 2px 0 #ffffff;
+}
+
+.beach-card::before,
+.beach-card::after {
+content: "";
+position: absolute;
+left: -10%;
+width: 120%;
+height: 45%;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.45);
+}
+
+.beach-card::before {
+bottom: -22%;
+}
+
+.beach-card::after {
+bottom: -32%;
+background: rgba(33, 83, 135, 0.12);
+}
+
+.beach-card span {
+position: relative;
+z-index: 1;
+}
+
 body{
 background-image: url(./img/background.jpg);
 background-size: cover;
@@ -276,6 +320,22 @@ var interval = setInterval(function() {
 									<div class="s-btn">
 										<a href="./05_後寮沙灘/index.html">
 											<img class="btn btn-initial" src="./img/05.png">
+										</a>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-12">
+									<div class="s-btn">
+										<a href="./06_講美沙灘/index.html" aria-label="前往講美沙灘頁面">
+											<img class="btn btn-initial" src="./img/06.png" alt="講美沙灘">
+										</a>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-12">
+									<div class="s-btn">
+										<a href="./07_中屯沙灘/index.html" aria-label="前往中屯沙灘頁面">
+											<img class="btn btn-initial" src="./img/07.png" alt="中屯沙灘">
 										</a>
 									</div>
 								</div>  
