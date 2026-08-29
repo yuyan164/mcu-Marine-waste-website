@@ -16,7 +16,7 @@
                 if($_FILES['file']['error'] === UPLOAD_ERR_OK) {
                     $uploadOK = 1;
                     $beachName = isset($_POST['beachName']) ? $_POST['beachName']: 'error';
-                    $allowedBeaches = ['01_菓葉沙灘', '02_龍門後灣', '03_龍門福德廟', '04_岐頭沙灘', '05_後寮沙灘'];
+                    $allowedBeaches = ['01_菓葉沙灘', '02_龍門後灣', '03_龍門福德廟', '04_岐頭沙灘', '05_後寮沙灘', '06_講美沙灘', '07_中屯沙灘'];
                     if (!in_array($beachName, $allowedBeaches)) {
                         echo "Beach doesn't exist" . '<br>'. $beachName;
                         $uploadOK = 0;
